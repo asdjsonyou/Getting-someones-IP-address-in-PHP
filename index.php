@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-     <title>Getting someones IP address in PHP</title>
-
-</head>
-<body>
-
 <?php
 
   $ip = $_SERVER['REMOTE_ADDR']; // Grabbing the IP
@@ -17,29 +8,28 @@
 
            //Writing the time and date to a file
 
-  $myFile = "xxxx.txt";
+  $myFile = "users.txt";
   $fh = fopen($myFile, 'a') or die("can't open file");
-  $stringData = "$time\n";
+  $stringData = "$time\n  ";
   fwrite($fh, $stringData);
   fclose($fh);
 
           // writing Ip address to the same file
 
-  $myFile = "xxxx.txt"; // value 1
+  $myFile = "users.txt"; // value 1
   $fh = fopen($myFile, 'a') or die("can't open file");
-  $stringData = "$ip\n";
+  $stringData = "$ip\n  ";
   fwrite($fh, $stringData);
   fclose($fh);
 
           // also writing hostname to the same file
 
-
-  $myFile = "xxxx.txt"; // value 2
+  $myFile = "users.txt"; // value 2
   $fh = fopen($myFile, 'a') or die("can't open file");
-  $stringData = "$hostaddress\n";
+  $stringData = "$hostaddress\n  ";
   fwrite($fh, $stringData);
   fclose($fh);
-  print "<strong> </strong><br />\n";
+  print "<strong> </strong><br/>\n";
 
            if ($referred == "")
               {
@@ -57,5 +47,3 @@
    window.location = "http://jaysonzabate.com/"
 </script>
   
-  </body>
-</html>
