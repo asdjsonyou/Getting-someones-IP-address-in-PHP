@@ -12,3 +12,7 @@ fclose($handle);
 /* Redirectng to a different page --> */
 header('Location: http://jaysonzabate.com/');
 exit;
+
+
+
+
