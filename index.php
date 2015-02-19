@@ -1,3 +1,4 @@
+
 <?php
  // writing Ip address to the same file
 $handle = fopen('users.txt', 'a');
