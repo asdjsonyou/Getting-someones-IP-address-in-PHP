@@ -1,6 +1,5 @@
 
 <?php
-
 /* Writing the time/date and Ip address to a file */
 $handle = fopen('users.txt', 'a');
 
@@ -15,3 +14,5 @@ fclose($handle);
 /* Redirectng to a different page */
 header('Location: http://jaysonzabate.com/');
 exit;
+
+
