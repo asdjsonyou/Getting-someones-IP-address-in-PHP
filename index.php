@@ -20,7 +20,7 @@
 /**
  * Redirectng to a different page 
  */
- header('Location: http://jaysonzabate.com/');
+ header('Location: https://asdjsonyou.dev/');
  exit;
 
 
